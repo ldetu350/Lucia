@@ -1,44 +1,41 @@
-'''
-Level 1: Create a program that asks the user for their favorite drink
-         and then prints that the computer loves the drink too.
+# Level 1
+# Add up all the numbers in an array. Print out the total.
+
+listOfNumbers = [1, 38, -28, 91, 193, 0]
+count = 0 
+for i in listOfNumbers:
+    count += i
+print(count)
 
 
-Example output:
-------------------------------------
-What is your favorite drink? Water
-I love Water too!
-'''
-# Your code here
+
+# Level 2
+# Given a list of students and a corresponding list of grades, print out the names of all students whose grade is 100.
+# In this example, the program should print
+# Ben
+# Carl
+
+listOfStudents = ["Abby", "Ben", "Carl", "Dave"]
+listOfGrades = [95, 100, 100, 92]
+
+for i in range(0, len(listOfStudents), 2):
+    if listOfGrades[i] != 100: 
+        print(listOfStudents[i])
 
 
-'''
-Level 2: Create a program that asks the user for their age and a year.
-         Print "In <year>, you will be <number> years old." where the 
-         number is your age in that year.
 
-Example output:
-------------------------------------
-How old are you? 19
-Give me a year: 2022
-You will be 22 years old in 2022.
-'''
-# Your code here
-age= input("how old are you")
-print("I am",age)
-'''
-Level 3: Create a program that asks the user for their name and then
-         prints their name in a frame of stars.
 
-Hint: You can make 6 stars by typing "*" * 6
-      Get the length of a string with len()
-      example: len("Keenan") = 6
 
-Example output:
-------------------------------------
-What is your name? Keenan
-**********
-* Keenan *
-**********
-'''
+# Level 3
+# Print out the sum of each row in a nested (2D) list
+# The output should be:
+# Sum of row 1: 10
+# Sum of row 2: 12
+# Sum of row 3: 13
 
-# Your code here
+a = [ [ 2, 3, 5 ] ,
+      [ 1, 4, 7 ] ,
+      [ 3, 1, 9 ] ]
+
+
+
